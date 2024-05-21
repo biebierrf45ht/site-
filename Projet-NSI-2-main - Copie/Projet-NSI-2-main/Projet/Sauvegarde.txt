@@ -1,0 +1,52 @@
+Sauvegarde : 
+<div class="menu">
+        <main>
+        <ul>
+            <li>Tendance
+                <ul>
+                    <li><a href="../Tendance/Meilleures ventes/Meilleures ventes.html" class="animated-link">Meilleures ventes</a></li>
+                    <li><a href="../Tendance/Dernières nouveautés/Dèrnieres nouveautés.html" class="animated-link">Dernières nouveautés</a></li>
+                </ul>
+            </li>
+            <li>Choisir une catégorie
+                <ul>
+                    <li>Bureautique
+                        <ul>
+                            <li><a href="../Choisir une catégorie/Bureautique/Ordinateurs portables/Ordinateurs portables.html" class="animated-link">Ordinateurs portables</a></li>
+                            <li><a href="../Choisir une catégorie/Bureautique/Imprimantes/Imprimantes.html" class="animated-link">Imprimantes</a></li>
+                            <li><a href="../Choisir une catégorie/Bureautique/Accessoires de bureau/Accessoires de bureau.html" class="animated-link">Accessoires de bureau</a></li>
+                        </ul>
+                    </li>
+                    <li>Multimédia
+                        <ul>
+                            <li><a href="../Choisir une catégorie/Multimédia/Téléviseurs/Téléviseurs.html" class="animated-link">Téléviseurs</a></li>
+                            <li><a href="../Choisir une catégorie/Multimédia/Appareils photo/Appareils photo.html" class="animated-link">Appareils photo</a></li>
+                            <li><a href="../Choisir une catégorie/Multimédia/Enceintes/Enceintes.html" class="animated-link">Enceintes</a></li>
+                        </ul>
+                    </li>
+                    <li>Musique DVD Blu-Ray
+                        <ul>
+                            <li><a href="../Choisir une catégorie/Musique DVD Blu-Ray/CDs/CDs.html" class="animated-link">CDs</a></li>
+                            <li><a href="../Choisir une catégorie/Musique DVD Blu-Ray/DVDs/DVDs.html" class="animated-link">DVDs</a></li>
+                            <li><a href="../Choisir une catégorie/Musique DVD Blu-Ray/Blu-Rays/Blu-Rays.html" class="animated-link">Blu-Rays</a></li>
+                        </ul>
+                    </li>
+                    <li>Jeux vidéo et consoles
+                        <ul>
+                            <li><a href="../Choisir une catégorie/Jeux vidéo et consoles/Consoles/Consoles.html" class="animated-link">Consoles</a></li>
+                            <li><a href="../Choisir une catégorie/Jeux vidéo et consoles/Jeux/Jeux.html" class="animated-link">Jeux</a></li>
+                            <li><a href="../Choisir une catégorie/Jeux vidéo et consoles/Accessoires/Accessoires.html" class="animated-link">Accessoires</a></li>
+                        </ul>
+                    </li>
+                    <li>High-Tech
+                        <ul>
+                            <li><a href="../Choisir une catégorie/High-Tech/Smartphones/Smartphones.html" class="animated-link">Smartphones</a></li>
+                            <li><a href="../Choisir une catégorie/High-Tech/Tablettes/Tablettes.html" class="animated-link">Tablettes</a></li>
+                            <li><a href="../Choisir une catégorie/High-Tech/Accessoires High-Tech/Accessoires High-Tech.html" class="animated-link">Accessoires High-Tech</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </main>
+    </div>
