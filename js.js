@@ -6,22 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const formData = new FormData(form);
         const formValues = Object.fromEntries(formData.entries());
-
-        fetch(endpoint, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formValues)
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erreur lors de la requête');
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', endpoint);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    callback(xhr.responseText);
+                } else {
+                    console.error('Erreur lors de la requête :', xhr.status);
+                }
             }
-            return response.text();
-        })
-        .then(callback)
-        .catch(error => {
-            console.error('Erreur lors de la requête :', error);
-        });
+        };
+        xhr.send(JSON.stringify(formValues));
     };
 
     const handleRegisterResponse = message => {
