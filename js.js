@@ -12,11 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const formData = new FormData(form);
         const formValues = Object.fromEntries(formData.entries());
-        
-        fetch(endpoint, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formValues)
+        const endpoint = '/register'; // Or '/login' depending
+
         })
         .then(response => response.text())
         .then(callback)
