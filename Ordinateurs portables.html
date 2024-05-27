@@ -6,7 +6,7 @@
     <title>Ordinateurs Portables</title>
     <link rel="icon" type="image/ico" href="logo.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
+    <script src="js.js"></script> <!-- Assurez-vous que le chemin est correct -->
 </head>
 <body>
     <header>
@@ -14,6 +14,7 @@
             <ul class="main-menu">
                 <li><a href="index.html" class="animated-link">Accueil</a></li>
                 <li><a href="Contact.html" class="animated-link">Contact</a></li>
+                <li><a href="Panier.html" class="animated-link">Panier</a></li> <!-- Lien vers la page Panier -->
             </ul>
         </nav>
     </header>
@@ -21,105 +22,120 @@
         <div class="container">
             <h1 class="titre-centré">Ordinateurs Portables</h1>
 
-            <div class="product">
+            <div class="product" id="prod1">
                 <img src="https://m.media-amazon.com/images/I/71epefXLVHL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Image du FIRMAST">
                 <div class="product-details">
-                    <div class="product-name">FIRMAST,Ordinateur Portable 15,6 Pouces, 16 Go RAM 256 Go SSD, 1 TB Extensible, PC Portable Win 11 Pro, Celeron N4000, FHD IPS 1920 x 1080, 5G WiFi, Bluetooth 5.0, Mini HDMI, avec Souris sans Fil, Argenté</div>
+                    <div class="product-name">FIRMAST, Ordinateur Portable 15,6 Pouces, 16 Go RAM 256 Go SSD, 1 TB Extensible, PC Portable Win 11 Pro, Celeron N4000, FHD IPS 1920 x 1080, 5G WiFi, Bluetooth 5.0, Mini HDMI, avec Souris sans Fil, Argenté</div>
                     <div class="product-price">Prix: 255.80€</div>
                     <div class="product-author">Auteur: FIRMAST</div>
+                    <button onclick="ajouterAuPanier('prod1', 'FIRMAST, Ordinateur Portable', 255.80)">Ajouter au panier</button>
                 </div>
             </div>
-
-            <div class="product">
+            <div class="product" id="prod2">
                 <img src="https://m.media-amazon.com/images/I/71zvzUcxaPL._AC_SX679_.jpg" alt="Image du Acer Aspire 1">
                 <div class="product-details">
                     <div class="product-name">Acer Aspire 1 A115-32-C3AK Ordinateur Portable 15,6'' Full HD, PC Portable (Intel Celeron N4500, RAM 4 Go, 128 Go eMMC, Intel UHD Graphics, Windows 11 ) - Clavier AZERTY (Français), Laptop Gris</div>
-                    <div class="product-price">Prix: 250€ </div>
+                    <div class="product-price">Prix: 250€</div>
                     <div class="product-author">Auteur: Acer</div>
+                    <button onclick="ajouterAuPanier('prod2', 'Acer Aspire 1', 250)">Ajouter au panier</button>
                 </div>
             </div>
-
-            <div class="product">
+            
+            <div class="product" id="prod3">
                 <img src="https://m.media-amazon.com/images/I/71xtRIoL-nL._AC_SX679_.jpg" alt="Image d'un OUZRS">
                 <div class="product-details">
                     <div class="product-name">Ordinateur Portable 15,6'' Pouces, 12 Go RAM, 256 Go SSD, Windows 11 Pro Celeron Notebook 2.6Ghz, PC Portable 1920x1080 IPS/HD, 2.4G+5G WiFi, Computer Supporte Mini HDMI, Laptop avec Souris, Noir</div>
                     <div class="product-price">Prix: 235.66€</div>
                     <div class="product-author">Auteur: OUZRS</div>
+                    <button onclick="ajouterAuPanier('prod3', 'OUZRS, Ordinateur Portable', 235.66)">Ajouter au panier</button>
                 </div>
             </div>
-            <div class="product">
+            
+            <div class="product" id="prod4">
                 <img src="https://m.media-amazon.com/images/I/51H5VPblVnL._AC_SX679_.jpg" alt="Image du MSI Katana 17 B12UDXK-1013FR">
                 <div class="product-details">
                     <div class="product-name">MSI Katana 17 B12UDXK-1013FR ; Intel Core i5 12450H - 16GB DDR5 - SSD 512GB - Nvidia RTX3050 6GB - 17.3" Full HD 144Hz - Windows 11 Famille - Clavier retroeclairé AZERTY</div>
                     <div class="product-price">Prix: 1199€</div>
                     <div class="product-author">Auteur: MSI</div>
+                    <button onclick="ajouterAuPanier('prod4', 'MSI Katana 17', 1199)">Ajouter au panier</button>
                 </div>
             </div>
-            <div class="product">
+            
+            <div class="product" id="prod5">
                 <img src="https://m.media-amazon.com/images/I/71sr97UtqaL._AC_SX679_.jpg" alt="Image du Dell G15 5530">
                 <div class="product-details">
-                    <div class="product-name">Dell G15 5530 Ordinateur Portable Gaming, Processeur Intel Core i5-13450HX, Écran 15.6" FHD 120Hz, 8Go RAM, 512Go SSD,NVIDIA GeForce RTX 3050 6Go GDDR6,Win 11H, Clavier AZERTY, Dark Shadow Grey
-                    </div>
+                    <div class="product-name">Dell G15 5530 Ordinateur Portable Gaming, Processeur Intel Core i5-13450HX, Écran 15.6" FHD 120Hz, 8Go RAM, 512Go SSD, NVIDIA GeForce RTX 3050 6Go GDDR6, Win 11H, Clavier AZERTY, Dark Shadow Grey</div>
                     <div class="product-price">Prix: 849€</div>
                     <div class="product-author">Auteur: Dell</div>
+                    <button onclick="ajouterAuPanier('prod5', 'Dell G15 5530', 849)">Ajouter au panier</button>
                 </div>
             </div>
-            <div class="product">
+            
+            <div class="product" id="prod6">
                 <img src="https://m.media-amazon.com/images/I/71gr13ufAbL._AC_SX679_.jpg" alt="HP Victus 15">
                 <div class="product-details">
                     <div class="product-name">HP Victus 15-fa1001sf PC Portable Gaming 15.6" FHD IPS (Intel Core i5-12500H, RAM 16 Go, SSD 512 Go, NVIDIA GeForce RTX 4050 6GB, AZERTY, Windows 11) Argent mica</div>
                     <div class="product-price">Prix: 899€</div>
                     <div class="product-author">Auteur: HP</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/71hIzfZ1SzL._AC_SX679_.jpg" alt="Image du ASUS TUF F15-TUF507VU-LP167W">
-                <div class="product-details">
-                    <div class="product-name">ASUS TUF F15-TUF507VU-LP167W PC Portable Gamer 15" FHD 144Hz (Intel Core i7-13620H, GeForce RTX 4050 TGP140W, 16G RAM, 512Go PCIe SSD) Windows 11 Home Clavier Rétroéclairé AZERTY Français RGB 1 Zonee</div>
-                    <div class="product-price">Prix: 1199€</div>
-                    <div class="product-author">Auteur: ASUS</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/713M0SfLIOL._AC_SX425_.jpg" alt="Image du MSI Bravo 17 D7VEK-082FR">
-                <div class="product-details">
-                    <div class="product-name">MSI Bravo 17 D7VEK-082FR : AMD Ryzen 7 7735HS - 32GB DDR5 - SSD 512GB - Nvidia RTX4050 6GB - 17.3" Full HD 144Hz - Windows 11 Famille - Clavier retroeclairé AZERTY</div>
-                    <div class="product-price">Prix: 1099€</div>
-                    <div class="product-author">Auteur: MSI</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/71V2zNl-B-L.__AC_SY300_SX300_QL70_ML2_.jpg" alt="Image du Acer Aspire 5 A515-56-702V">
-                <div class="product-details">
-                    <div class="product-name">Acer Aspire 5 A515-56-702V Ordinateur portable | Écran IPS Full HD de 15,6 po | Intel Core i7-1165G7 11e génération | Intel Iris Xe Graphics | 16 Go DDR4 | 512 Go SSD | WiFi 6 | Lecteur d'empreintes</div>
-                    <div class="product-price">Prix: 1635.92€</div>
-                    <div class="product-author">Auteur: Acer</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/71W3aanJswL._AC_SX425_.jpg" alt="Image du Dell XPS 17 9730 ">
-                <div class="product-details">
-                    <div class="product-name">Dell XPS 17 9730 Intel Core i7 Ordinateur Portable 17 Pouces | UHD Tactile - Platinium Silver | 16Go de RAM, SSD 1To, NVIDIA GeForce RTX 4050 | Win 11 Home - Clavier Azerty, Platinum Silver</div>
-                    <div class="product-price">Prix: 3219€</div>
-                    <div class="product-author">Auteur: Dell </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/61hofxR1GQL._AC_SX425_.jpg" alt="Image du Razer Blade 15 Advanced Model">
-                <div class="product-details">
-                    <div class="product-name">Razer Blade 15 Advanced Model - PC Portable Gaming 15,6, FHD 360Hz - i7 - NVIDIA GeForce RTX 3080 Ti, 32GB DDR5, 1TB - Clavier AZERTY - Chroma RGB Noir</div>
-                    <div class="product-price">Prix: 4499.99€</div>
-                    <div class="product-author">Auteur: Razer</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/81c38KmzgNL._AC_SX425_.jpg" alt="Image du Asus ROG Zephyrus G16-GU603ZV-N48W">
-                <div class="product-details">
-                    <div class="product-name">Asus ROG Zephyrus G16-GU603ZV-N48W 16 Pouces FHD+ Pc Portable (Intel Core i7-12700H Processeur 4.7 GHz, 16GB DDR4 RAM, 512GB PCIe 4.0 NVMe M.2 SSD, NVIDIA GeForce RTX 4060 TGP 120W) – Clavier AZERTY.</div>
-                    <div class="product-price">Prix: 1499.99€</div>
-                    <div class="product-author">Auteur: Asus ROG</div>
-                </div>
-            </div>
+                    <button onclick="ajouterAuPanier('prod6', 'HP Victus 15', 899)">Ajouter au panier</button>
+                    </div>
+                    
+                    </div>
+                    <div class="product" id="prod7">
+                        <img src="https://m.media-amazon.com/images/I/71hIzfZ1SzL._AC_SX679_.jpg" alt="Image du ASUS TUF F15-TUF507VU-LP167W">
+                        <div class="product-details">
+                            <div class="product-name">ASUS TUF F15-TUF507VU-LP167W PC Portable Gamer 15" FHD 144Hz (Intel Core i7-13620H, GeForce RTX 4050 TGP140W, 16G RAM, 512Go PCIe SSD) Windows 11 Home Clavier Rétroéclairé AZERTY Français RGB 1 Zone</div>
+                            <div class="product-price">Prix: 1199€</div>
+                            <div class="product-author">Auteur: ASUS</div>
+                            <button onclick="ajouterAuPanier('prod7', 'ASUS TUF F15', 1199)">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product" id="prod8">
+                        <img src="https://m.media-amazon.com/images/I/713M0SfLIOL._AC_SX425_.jpg" alt="Image du MSI Bravo 17 D7VEK-082FR">
+                        <div class="product-details">
+                            <div class="product-name">MSI Bravo 17 D7VEK-082FR : AMD Ryzen 7 7735HS - 32GB DDR5 - SSD 512GB - Nvidia RTX4050 6GB - 17.3" Full HD 144Hz - Windows 11 Famille - Clavier retroeclairé AZERTY</div>
+                            <div class="product-price">Prix: 1099€</div>
+                            <div class="product-author">Auteur: MSI</div>
+                            <button onclick="ajouterAuPanier('prod8', 'MSI Bravo 17', 1099)">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product" id="prod9">
+                        <img src="https://m.media-amazon.com/images/I/71V2zNl-B-L.__AC_SY300_SX300_QL70_ML2_.jpg" alt="Image du Acer Aspire 5 A515-56-702V">
+                        <div class="product-details">
+                            <div class="product-name">Acer Aspire 5 A515-56-702V Ordinateur portable | Écran IPS Full HD de 15,6 po | Intel Core i7-1165G7 11e génération | Intel Iris Xe Graphics | 16 Go DDR4 | 512 Go SSD | WiFi 6 | Lecteur d'empreintes</div>
+                            <div class="product-price">Prix: 1635.92€</div>
+                            <div class="product-author">Auteur: Acer</div>
+                            <button onclick="ajouterAuPanier('prod9', 'Acer Aspire 5', 1635.92)">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product" id="prod10">
+                        <img src="https://m.media-amazon.com/images/I/71W3aanJswL._AC_SX425_.jpg" alt="Image du Dell XPS 17 9730 ">
+                        <div class="product-details">
+                            <div class="product-name">Dell XPS 17 9730 Intel Core i7 Ordinateur Portable 17 Pouces | UHD Tactile - Platinium Silver | 16Go de RAM, SSD 1To, NVIDIA GeForce RTX 4050 | Win 11 Home - Clavier Azerty, Platinum Silver</div>
+                            <div class="product-price">Prix: 3219€</div>
+                            <div class="product-author">Auteur: Dell </div>
+                            <button onclick="ajouterAuPanier('prod10', 'Dell XPS 17', 3219)">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product" id="prod11">
+                        <img src="https://m.media-amazon.com/images/I/61hofxR1GQL._AC_SX425_.jpg" alt="Image du Razer Blade 15 Advanced Model">
+                        <div class="product-details">
+                            <div class="product-name">Razer Blade 15 Advanced Model - PC Portable Gaming 15,6, FHD 360Hz - i7 - NVIDIA GeForce RTX 3080 Ti, 32GB DDR5, 1TB - Clavier AZERTY - Chroma RGB Noir</div>
+                            <div class="product-price">Prix: 4499.99€</div>
+                            <div class="product-author">Auteur: Razer</div>
+                            <button onclick="ajouterAuPanier('prod11', 'Razer Blade 15', 4499.99)">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product" id="prod12">
+                        <img src="https://m.media-amazon.com/images/I/81c38KmzgNL._AC_SX425_.jpg" alt="Image du Asus ROG Zephyrus G16-GU603ZV-N48W">
+                        <div class="product-details">
+                            <div class="product-name">Asus ROG Zephyrus G16-GU603ZV-N48W 16 Pouces FHD+ Pc Portable (Intel Core i7-12700H Processeur 4.7 GHz, 16GB DDR4 RAM, 512GB PCIe 4.0 NVMe M.2 SSD, NVIDIA GeForce RTX 4060 TGP 120W) – Clavier AZERTY</div>
+                            <div class="product-price">Prix: 1499.99€</div>
+                            <div class="product-author">Auteur: Asus ROG</div>
+                            <button onclick="ajouterAuPanier('prod12', 'Asus ROG Zephyrus G16', 1499.99)">Ajouter au panier</button>
+                        </div>
+                    </div>
+
         </div>
     </main>
     <footer class="footer">

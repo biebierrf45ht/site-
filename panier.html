@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="icon" type="image/ico" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body onload="afficherPanier()">
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html" class="animated-link">Accueil</a></li>
+                <li><a href="Contact.html" class="animated-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titre-centré">Panier</h1>
+        <div id="panier-details"></div>
+        <div id="total-commande"></div>
+        <div id="panier"></div>
+        <button onclick="finaliserCommande()">Passer à la caisse</button>
+    </main>
+    <footer class="footer">
+        <p>
+            &copy; Alpha corporation, Inc.
+            <a href="Termes.html" class="animated-link">Termes</a> 
+            <a href="Confidentialité.html" class="animated-link">Confidentialité</a> 
+            <a href="Sécurité.html" class="animated-link">Sécurité</a> 
+            <a href="Status.html" class="animated-link">Status</a>
+            <a href="index.html" class="animated-link">Accueil</a>
+        </p>
+    </footer>
+</body>
+</html>
